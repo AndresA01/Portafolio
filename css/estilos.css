@@ -1,0 +1,208 @@
+/* Configuración general */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+}
+
+header {
+    background-color: #111c32;
+    border-bottom: 1px solid #263449;
+}
+
+nav {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: #67e8f9;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+nav li a:hover,
+nav li a:focus-visible {
+    color: #67e8f9;
+}
+
+/* Presentación */
+.presentacion,
+.sobre-mi,
+.proyectos,
+.contacto {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 70px 20px;
+}
+
+.presentacion {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.etiqueta,
+.numero {
+    color: #67e8f9;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h1 {
+    max-width: 700px;
+    font-size: clamp(2.2rem, 6vw, 4rem);
+    line-height: 1.15;
+    margin: 15px 0;
+}
+
+.presentacion > p:not(.etiqueta) {
+    max-width: 600px;
+    color: #b7c4d6;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    border-radius: 6px;
+    background-color: #67e8f9;
+    color: #0f172a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.boton:hover,
+.boton:focus-visible {
+    background-color: #a5f3fc;
+}
+
+/* Sobre mí */
+.sobre-mi {
+    border-top: 1px solid #263449;
+    border-bottom: 1px solid #263449;
+}
+
+.sobre-mi p,
+.descripcion {
+    max-width: 700px;
+    color: #b7c4d6;
+}
+
+/* Proyectos */
+.contenedor-proyectos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.tarjeta {
+    padding: 28px;
+    background-color: #172338;
+    border: 1px solid #304158;
+    border-radius: 10px;
+}
+
+.tarjeta h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.tarjeta > p:not(.numero):not(.tecnologias) {
+    color: #b7c4d6;
+}
+
+.tecnologias {
+    color: #67e8f9;
+    font-size: 0.9rem;
+}
+
+.tarjeta a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #67e8f9;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.tarjeta a:hover,
+.tarjeta a:focus-visible {
+    text-decoration: underline;
+}
+
+/* Contacto y pie de página */
+.contacto {
+    border-top: 1px solid #263449;
+}
+
+footer {
+    padding: 25px 20px;
+    background-color: #111c32;
+    text-align: center;
+    color: #b7c4d6;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Adaptación a celulares */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .presentacion {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .contenedor-proyectos {
+        grid-template-columns: 1fr;
+    }
+}

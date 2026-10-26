@@ -1,11 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
+    <meta name="description" content="Portafolio personal de desarrollo web. Conoce mis proyectos y mi proceso de aprendizaje en Riwi.">
+    <title>Mi portafolio | Desarrollo web</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <h1>Portafolio en proceso...</h1>
+    <header>
+        <nav aria-label="Navegación principal">
+            <a class="logo" href="#inicio">Mi portafolio</a>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="presentacion">
+            <p class="etiqueta">Estudiante de desarrollo de software</p>
+            <h1>Hola, soy Andres Acevedo un desarrollador en formación.</h1>
+            <p>
+                Estoy aprendiendo a crear páginas web y desarrollando
+                proyectos para fortalecer mis habilidades en programación.
+            </p>
+            <a class="boton" href="#proyectos">Ver mis proyectos</a>
+        </section>
+
+        <section id="sobre-mi" class="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>
+                Actualmente estoy aprendiendo desarrollo de software en Riwi.
+                Este portafolio reúne algunos de mis proyectos y representa
+                mi progreso en el mundo de la programación.
+            </p>
+        </section>
+
+        <section id="proyectos" class="proyectos">
+            <h2>Mis proyectos</h2>
+            <p class="descripcion">
+                Estos son algunos de los proyectos que he desarrollado
+                durante mi proceso de aprendizaje.
+            </p>
+
+            <div class="contenedor-proyectos">
+                <article class="tarjeta">
+                    <p class="numero">PROYECTO 01</p>
+                    <h3>Parche Dev 2026</h3>
+                    <p>
+                        Sitio web para un evento ficticio de desarrollo
+                        de software, con agenda, ponentes, inscripción
+                        y código de conducta.
+                    </p>
+                    <p class="tecnologias">HTML · CSS</p>
+                    <a
+                        href="https://andresa01.github.io/Actividades_Riwi/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Ver proyecto ↗
+                    </a>
+                </article>
+
+                <article class="tarjeta">
+                    <p class="numero">PROYECTO 02</p>
+                    <h3>Rueda Libre</h3>
+                    <p>
+                        Página web para un servicio ficticio de alquiler
+                        de bicicletas en Medellín, con tarifas, rutas
+                        y opciones de reserva.
+                    </p>
+                    <p class="tecnologias">HTML · CSS</p>
+                    <a
+                        href="https://andresa01.github.io/Actividades_Riwi/Actividad%20%236%20-%20HTML%20y%20CSS%20-%20Individual/rueda-libre/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Ver proyecto ↗
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <h2>Contacto</h2>
+            <p>Puedes conocer más sobre mi trabajo en GitHub.</p>
+            <a
+                class="boton"
+                href="https://github.com/andresa01"
+                target="_blank"
+                rel="noopener noreferrer">
+                Visitar mi GitHub
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Mi portafolio · 2026</p>
+        <p>Construido con HTML y CSS.</p>
+    </footer>
 </body>
 </html>
